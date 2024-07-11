@@ -1,0 +1,328 @@
+
+.mejores{
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mejores .carta{
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    background: #dab11f;
+}
+
+.mejores .precio{
+    position: absolute;
+    z-index: 1;
+    background: #fcd165;
+    width: 40px;
+    line-height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.mejores .carta img{
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.mejores .carta .info{
+    text-align: center;
+    width: 300px;
+}
+
+.mejores .carta .info h2{
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.mejores .carta .info i{
+    color: #000;
+    font-size: 1.4em;
+}
+
+.mejores .carta .calculo{
+    display: block;
+    margin-top: 5px; 
+    color: #000;
+}
+
+
+#precio_trago{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 50px;
+    line-height: 30px;
+    color: #000;
+    background: #fcd165;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.carrito{
+    max-width: 100%;
+    display: none;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+}
+
+.carrito > .close{
+    z-index: 2;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.carrito h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carrito .close::before{
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 35px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    background: url("../img/Polygon.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+    height: 45px;
+}
+
+.card_cb{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 380px;
+    background: #000;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    place-items: center;
+}
+
+.card_cb img{
+    max-width: 100%;
+    height: 220px;
+}
+
+.card_cb .img{
+    width: 150px;
+    height: 100%;
+}
+.card_cb .info{
+    margin-left: 10px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    padding-bottom: 10px;
+}
+
+.card_cb .info h2{
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.card_cb .info li{
+    text-align: left;
+    font-size: 1em;
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.card_cb .info li::before{
+    margin-left: 5px;
+    content: "⦁ ";
+}
+
+.card_cb #precio{
+    margin-top: 10px;
+    display: block;
+    background: red;
+    line-height: 30px;
+}
+
+#precio::before{
+    content: "Precio: ";
+}
+
+.card_cb #calificacion{
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    background: rgb(0, 0, 0);
+}
+
+.card_cb #calificacion:hover #calculo{
+    display: block;
+}
+.card_cb #calculo{
+    right: -10px;
+    top: -10px;
+    color: #000;
+    display: none;
+    font-weight: bold;
+    background: #ffc800;
+    position: absolute;
+}
+
+.card_cb #calificacion i{
+    margin: 5px;
+    color: #ffc800;
+    font-size: 1.2em;
+}
+
+.card_cb #comprar{
+    margin-top: 5px;
+    display: block;
+    background: rgb(43, 255, 0);
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card_cb #calificar{
+    margin-top: 5px;
+    display: block;
+    background: #ffc800;
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calificar_md{
+    left: 50%;
+    top: 50%;
+    height: auto;
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+}
+
+.calificar_md i{
+    font-size: 1.5em;
+    color: #ffc800;
+}
+
+.calificar_md textarea{
+    margin-top: 10px;
+    width: 85%;
+    height: 130px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+}
+
+.calificar_md h2{
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .mejores{
+        max-width: 98%;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .mejores .carta{
+        text-align: center;
+        max-width: 90%;
+        margin: 10px;
+        position: relative;
+        border-radius: 10px;
+        padding: 0px;
+        display: block;
+        width: 400px; 
+        padding-bottom: 10px;
+        height: auto;
+        background: #dab11f;
+    }
+    
+    .mejores .carta img{
+        max-width: 100%;
+        width: 200px;
+        height: 300px;
+    }
+    
+    .mejores .carta .info{
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .mejores .carta .info h2{
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        color: #000;
+        margin-bottom: 5px;
+    }
+    
+    .mejores .carta .info i{
+        color: #000;
+        font-size: 1.4em;
+    }
+    
+    .mejores .carta .calculo{
+        display: block;
+        margin-top: 5px; 
+        color: #000;
+    }
+}
